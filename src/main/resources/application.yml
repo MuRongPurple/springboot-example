@@ -1,4 +1,14 @@
 spring:
   aop:
     auto: true
-    proxy-target-class: true  # Whether subclass-based (CGLIB) proxies are to be created (true) as opposed to standard Java interface-based proxies (false).
+    proxytarget-class: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:localhost:3306/ssm_crud
+    username: root
+    password: 123456
+logging:
+  level:
+    com.murongpurple.org.interceptor: debug
+server:
+  port: 8080
